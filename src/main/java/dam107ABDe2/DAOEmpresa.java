@@ -51,7 +51,6 @@ public class DAOEmpresa {
     
     public ArrayList<Empleado> RecogeEmpleadosMenores(LocalDate fecha) throws SQLException{
         ArrayList <Empleado> emps = new ArrayList<>();
-        System.out.println(java.sql.Date.valueOf(fecha));
         String consulta = "SELECT id, nombre, salario, fechaNacimiento, categoria FROM empleado WHERE fechaNacimiento >= '" + java.sql.Date.valueOf(fecha) + "'";
         PreparedStatement ps = con.prepareStatement(consulta);
         ResultSet rs = ps.executeQuery();

@@ -18,6 +18,7 @@ public class Main {
                 System.out.println("-------------------------");
                 System.out.println("ID: "  + x.getId());
                 System.out.println("Nombre: "  + x.getNombre());
+                System.out.println("Categoria: "  + x.getCategoria());
                 System.out.println("-------------------------");
             }
         } catch (SQLException e) {
