@@ -31,6 +31,8 @@ public class Main {
                         System.out.println("Opcion incorrecta");
                 }while(opcion!=0 && opcion!=1);
             }while(opcion!=0);
+           
+            dao.cerrarCon();
             
         } catch (SQLException e) {
             e.printStackTrace();
@@ -57,4 +59,5 @@ public class Main {
             return null;
         }
     }
+    
 }

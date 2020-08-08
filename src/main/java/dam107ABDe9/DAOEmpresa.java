@@ -43,4 +43,8 @@ public class DAOEmpresa {
            e.printStackTrace();
            return -1; 
         }
-}}
+}
+public void cerrarCon() throws SQLException{
+        con.close();
+    }
+}

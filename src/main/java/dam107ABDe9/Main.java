@@ -19,7 +19,7 @@ public class Main {
             if(actus==-1) System.out.println("Se ha producido un error");
             else if(actus==0) System.out.println("No ha habido actualizaciones");
             else System.out.println("Se han producido actualizaciones: "+ actus);
-            
+            dao.cerrarCon();
         }catch (SQLException e) {
             e.printStackTrace();
         }catch (IOException e) {

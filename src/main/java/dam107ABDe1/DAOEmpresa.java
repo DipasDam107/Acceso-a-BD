@@ -48,4 +48,8 @@ public class DAOEmpresa {
         return emps;
     }
     
+     public void cerrarCon() throws SQLException{
+        con.close();
+    }
+    
 }

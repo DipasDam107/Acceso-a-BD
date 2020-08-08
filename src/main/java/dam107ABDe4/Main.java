@@ -21,6 +21,7 @@ public class Main {
             for(Empleado x : emps)
                 System.out.println(x.toString());
             
+            dao.cerrarCon();
         } catch (SQLException e) {
             e.printStackTrace();
         }catch (IOException e) {

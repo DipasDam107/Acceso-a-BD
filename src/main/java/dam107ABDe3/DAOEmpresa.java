@@ -43,4 +43,7 @@ public class DAOEmpresa {
         return rs.getInt(1);
     }
     
+    public void cerrarCon() throws SQLException{
+        con.close();
+    }
 }

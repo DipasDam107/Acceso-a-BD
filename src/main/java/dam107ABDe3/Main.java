@@ -24,6 +24,7 @@ public class Main {
             if (emps == 0) System.out.println("No existe la categoria "+ cat);
             else System.out.println("En la categoria " +cat + " hay "+emps+ " empleados" );
             
+            dao.cerrarCon();
         } catch (SQLException e) {
             e.printStackTrace();
         }catch (IOException e) {

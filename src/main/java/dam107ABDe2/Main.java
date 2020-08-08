@@ -30,6 +30,8 @@ public class Main {
                 System.out.println("-------------------------");
                 
             }
+            
+            dao.cerrarCon();
         } catch (SQLException e) {
             e.printStackTrace();
         }catch (IOException e) {

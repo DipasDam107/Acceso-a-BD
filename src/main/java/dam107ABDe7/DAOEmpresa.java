@@ -34,4 +34,8 @@ public class DAOEmpresa {
            return -1; 
 //        }
     }
-}}
+}
+public void cerrarCon() throws SQLException{
+        con.close();
+    }
+}
